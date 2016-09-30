@@ -11,7 +11,7 @@ if system == 'y':
 #We will now calculate Metric Consumption
     mcm=mfuel/mdistance*100
 #We will now present the user with their statistics in both USC and Metric
-    print('                     \tUSC       \tMetric')
+    print('                     \tUSC         \tMetric')
     print('Distance___________: \t{:.3f} miles\t{:.3f} Km'.format(distance, mdistance))
     print('Gas________________: \t{:.3f} gallons\t{:.3f} Liters'.format(fuel, mfuel))
     print("Consumption________: \t{:.3f} mpg\t    {:.3f} 1/100Km".format(mpg, mcm))
