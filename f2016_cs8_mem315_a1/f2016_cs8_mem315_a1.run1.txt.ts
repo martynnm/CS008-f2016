@@ -8,6 +8,6 @@ How much gas in gallons did you use?597.89
                      	USC       	    Metric
 Distance___________: 	63213.567 miles	101732.122 Km
 Gas________________: 	597.890 gallons	2263.259 Liters
-Consumption________: 	105.728 mpg	    2.225 1/100Km
+Consumption________: 	105.728 mpg	  2.225 1/100Km
 Gas Consumption Rating:Excellent
 >>>
