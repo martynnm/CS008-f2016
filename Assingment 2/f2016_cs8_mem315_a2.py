@@ -17,7 +17,7 @@ def processfile(file):
         line = line.split(',')
         # This allows us to add the value of the string (converting it to a float) found in column 2 of our files to the pre-established variable of distance_ran
         distance_ran += float(line[1])
-        # We will now return the values found in the loop
+        # We will now return the values found in the loop here
     excel1.append(linec)
     excel1.append(distance_ran)
     # Closing the file
