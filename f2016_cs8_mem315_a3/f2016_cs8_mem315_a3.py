@@ -57,7 +57,7 @@ def main():
     total_distance = 0
     main_max = ['Name', 0]
     main_min = ['Name', 1000000000]
-    # Here we open and set up to read the master input list
+    # Here we open & set up to read the master input list
     f = open('f2016_cs8_a3.data.txt', 'r')
     for line in f:
         total_files += 1
