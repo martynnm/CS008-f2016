@@ -33,8 +33,6 @@ def processFile(file):
                 appearances_dict[name] = 1
     f.close()
     return [dict1, lines_read, max1, min1, appearances_dict]
-
-
 # Here we return the values of the dictionary of the data of the file we just read. These are the persons name,how much they ran,number of lines read,
 # and the minimum and maximum of the file we just read
 def printKV(key, value, klen):
@@ -50,8 +48,6 @@ def printKV(key, value, klen):
     else:
         value = format(str(value), '.30s')
     print(key + ' : ' + value)
-
-
 def main():
     # Here we are setting up the initial values for the dictionary
     main_dict = {}
@@ -123,8 +119,6 @@ def main():
         else:
             f.write('{},{},{:.2f}'.format(main_keys_list[i], 1, float(main_dict[main_keys_list[i]])) + '\n')
     f.close()
-
-
 main()
 
 
