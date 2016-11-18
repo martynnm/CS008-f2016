@@ -9,7 +9,7 @@ def processFile(file):
     f = open(file, 'r')
     for line in f:
         lines_read += 1
-        # Here we split each line at the comma and delete the white space
+        # Here I split each line at the comma and delete the white space
         line = line.rstrip()
         line = line.split(',')
         # Here we use this clause to remove counting the "Name" box to avoid any processing errors.
