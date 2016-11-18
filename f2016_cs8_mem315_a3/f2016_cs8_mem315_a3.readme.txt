@@ -1,0 +1,8 @@
+The first thing that I decided to do was to set up a dictionary for the values that we needed along with setting up some initial values.
+The next thing I decided to do was to set up and read the master input list. The next thing I had to do was figure out how to get the
+neccesary data from each file.I then set up a process file function that would take the file we needed from the master file
+list. Here in the process file fucntion I needed to set local variable values to get the data we needed such as distance ran
+and the number of appearences of each person in each file. Then after all of the files were processed I grouped all of the
+data together to find the global max and min and the total distance each person ran and the distance ran in total for all of the files
+and the appearances/total appearences. I then printed it and wrote the data that was requested into an output file that would be sent out
+once the program was completed. I made sure to always close the files and program once they where done to avoid any error.
