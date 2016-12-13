@@ -1,3 +1,7 @@
+#
+# MN: header with user, instructor and course info is missing
+#
+
 # This loop will accept the input given by the user as a file found on the computer
 def processfile(file):
     # we must first set a list of begining variables (Each will start at the value of 0 so the data of the value of the file will be added onto this 0 state
@@ -53,9 +57,16 @@ def main():
     total_lines = 0
     total_distance = 0
     # Here we are begining the loop that will process each inputed file until one of the specific preset commands are made
+    #
+    # MN: why not using the test in the while statement to control the exit, 
+    #     instead of inserting an additional if in the loop
+    #
     while file:
         file = input('Please provide the file name : ')
         print(' ')
+        # 
+        # MN: see comment on while loop
+        #
         if file == '' or file == 'quit' or file == 'q':
             printKV('Total # of lines', total_lines, 28)
             printKV('Total distance ran', total_distance, 28)
@@ -73,12 +84,5 @@ def main():
 
 
 main()
-
-
-
-
-
-
-
 
 

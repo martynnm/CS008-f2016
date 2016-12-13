@@ -1,3 +1,13 @@
+#
+# MN: header with user, intructor and course info is missing
+#
+# Notes:
+# MN: respect indentation with comments too
+# MN: food for thoughts: can you reduce the min and max search to only one loop, instead of doing at the file level and than at the global level?
+#
+
+
+
 #Here we take the file name from the master file list. We also set initial values for each file to refer to the dictionary/count lines
 def processFile(file):
     dict1 = {}
@@ -15,24 +25,25 @@ def processFile(file):
         #Here we use this clause to remove counting the "Name" box to avoid any processing errors.
         if line[0] != 'name':
             name = str(line[0]).rstrip()
-        #Here we take the second entry in the list which is the distance run and convert it into a float
+            #Here we take the second entry in the list which is the distance run and convert it into a float
             distance_run = float(line[1])
             if distance_run > max1[1]:
                 max1[0] = name
                 max1[1] = distance_run
-        #Here, using the next two if functions we find the minimum and maximum distance run of the file we are reading
+            #Here, using the next two if functions we find the minimum and maximum distance run of the file we are reading
             if distance_run < min1[1]:
                 min1[0] = name
                 min1[1] = distance_run
             if name in dict1:
                 dict1[name] += distance_run
                 appearances_dict[name] += 1
-        #This else clause allows us to find duplicates within the file and stop our dictionary from overwriting duplicate data entries
+            #This else clause allows us to find duplicates within the file and stop our dictionary from overwriting duplicate data entries
             else:
                 dict1[name] = distance_run
                 appearances_dict[name] = 1
     f.close()
     return [dict1, lines_read, max1, min1, appearances_dict]
+
 #Here we return the values of the dictionary of the data of the file we just read. These are the persons name,how much they ran,number of lines read, 
 #and the minimum and maximum of the file we just read
 def printKV(key, value, klen):
@@ -59,6 +70,7 @@ def main():
     main_max = ['Name', 0]
     main_min = ['Name', 1000000000]
     #Here we open and set up to read the master input list
+    # MN: why not asking the user for master list file name?
     f = open('f2016_cs8_a3.data.txt', 'r')
     for line in f:
         total_files += 1
